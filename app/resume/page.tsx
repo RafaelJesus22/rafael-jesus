@@ -14,17 +14,17 @@ export const metadata: Metadata = {
 export default function ResumePage() {
   return (
     <Container>
-      <div className="flex gap-4 items-center mb-6">
+      <div className="flex flex-col sm:flex-row gap-4 items-center mb-6">
         <Avatar
           src="https://github.com/RafaelJesus22.png"
-          className="h-24 w-24"
+          className="h-32 w-32 sm:h-24 sm:w-24"
           isBordered
           color="secondary"
         />
         <div>
           <h1 className="text-3xl font-black uppercase">Rafael Moura</h1>
           <h3 className="font-semibold mb-2">Front-end and Mobile Developer</h3>
-          <div className="flex gap-1">
+          <div className="flex gap-1 justify-center sm:justify-start">
             <ContactLink
               href="https://www.linkedin.com/in/rafaeljesuscm/"
               imgSrc="/linkedin.svg"
@@ -55,7 +55,7 @@ export default function ResumePage() {
         </div>
       </div>
 
-      <Section>
+      <Section id="about">
         <SectionTitle>About me</SectionTitle>
 
         <div className="px-2 flex flex-col gap-2">
@@ -79,7 +79,7 @@ export default function ResumePage() {
         </div>
       </Section>
 
-      <Section>
+      <Section id="skills">
         <SectionTitle>Skills</SectionTitle>
         <ul className="flex gap-2 flex-wrap justify-center">
           <SkillChip imgSrc="/react.svg" imgAlt="React.js">
@@ -106,7 +106,7 @@ export default function ResumePage() {
         </ul>
       </Section>
 
-      <Section>
+      <Section id="experience">
         <SectionTitle>Experience</SectionTitle>
 
         <Experience
@@ -178,7 +178,7 @@ export default function ResumePage() {
         />
       </Section>
 
-      <Section>
+      <Section id="education">
         <SectionTitle>Education</SectionTitle>
         <div>
           <h4 className="font-bold text-xl mb-1">
@@ -195,11 +195,18 @@ export default function ResumePage() {
 }
 
 function Container({ children }: Readonly<{ children: ReactNode }>) {
-  return <div className="px-4 max-w-[720px] m-auto mt-4">{children}</div>;
+  return <div className="px-4 max-w-[720px] m-auto my-12">{children}</div>;
 }
 
-function Section({ children }: Readonly<{ children: ReactNode }>) {
-  return <section className="my-4 rounded bg-[#0cdf790]">{children}</section>;
+function Section({
+  children,
+  id,
+}: Readonly<{ children: ReactNode; id: string }>) {
+  return (
+    <section id={id} className="my-4 rounded bg-[#0cdf790]">
+      {children}
+    </section>
+  );
 }
 
 function SectionTitle({ children }: Readonly<{ children: ReactNode }>) {
