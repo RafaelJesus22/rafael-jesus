@@ -28,7 +28,7 @@ export default function RootLayout({
           "[&_*::selection]:bg-cyan-600 [&_*::selection]:text-white"
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "white" }}>
           <div className="relative flex flex-col h-screen">
             <main className="container mx-auto max-w-7xl flex-grow">
               {children}

@@ -6,6 +6,7 @@ import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
 import { Divider } from "@heroui/divider";
 import { Chip } from "@heroui/chip";
+import { NavBar } from "./components/nav-bar";
 
 export const metadata: Metadata = {
   title: "Rafael Moura | Resume",
@@ -14,16 +15,23 @@ export const metadata: Metadata = {
 export default function ResumePage() {
   return (
     <Container>
-      <div className="flex flex-col sm:flex-row gap-4 items-center mb-6">
+      <NavBar />
+
+      <div className="flex flex-col sm:flex-row gap-4 items-center my-6">
         <Avatar
           src="https://github.com/RafaelJesus22.png"
-          className="h-32 w-32 sm:h-24 sm:w-24"
+          className="h-32 w-32 sm:h-40 sm:w-40"
           isBordered
+          radius="md"
           color="secondary"
         />
-        <div>
-          <h1 className="text-3xl font-black uppercase">Rafael Moura</h1>
-          <h3 className="font-semibold mb-2">Front-end and Mobile Developer</h3>
+        <div className="flex flex-col items-center sm:items-start">
+          <h1 className="text-3xl sm:text-4xl font-black uppercase">
+            Rafael Moura
+          </h1>
+          <h3 className="font-extrabold mb-2 sm:text-2xl uppercase">
+            Front-end & Mobile Developer
+          </h3>
           <div className="flex gap-1 justify-center sm:justify-start">
             <ContactLink
               href="https://www.linkedin.com/in/rafaeljesuscm/"
@@ -53,6 +61,8 @@ export default function ResumePage() {
             </ContactLink>
           </div>
         </div>
+
+        <div></div>
       </div>
 
       <Section id="about">
@@ -60,9 +70,10 @@ export default function ResumePage() {
 
         <div className="px-2 flex flex-col gap-2">
           <p>
-            I am a software developer with over 5 years of professional
-            experience, specializing in mobile and web development. Focused on
-            creating beautiful, user-friendly and high performant applications.
+            I am a software developer with <Strong>over 5 years</Strong> of
+            professional experience, specializing in mobile and web development.
+            Focused on creating beautiful, user-friendly and high performant
+            applications.
           </p>
           <p>
             Throughout my career, I've worked on large-scale, public-facing
@@ -195,7 +206,7 @@ export default function ResumePage() {
 }
 
 function Container({ children }: Readonly<{ children: ReactNode }>) {
-  return <div className="px-4 max-w-[720px] m-auto my-12">{children}</div>;
+  return <div className="px-4 max-w-[720px] m-auto mb-12">{children}</div>;
 }
 
 function Section({
@@ -267,14 +278,14 @@ function ContactLink({
       <Chip
         classNames={{
           base: "bg-linear-to-br from-purple-600  to-cyan-500 border-none border-white/50 shadow-indigo-500/30",
-          content: "drop-shadow-xs shadow-black text-white text-xs",
+          content: "drop-shadow-xs shadow-black text-md",
         }}
         variant="shadow"
         radius="sm"
         color="secondary"
-        size="sm"
+        size="md"
         startContent={
-          <Image src={imgSrc} alt={imgAlt} width={width * 0.6} radius="none" />
+          <Image src={imgSrc} alt={imgAlt} width={width} radius="none" />
         }
       >
         {children}
@@ -294,16 +305,26 @@ function SkillChip({
         size="lg"
         radius="sm"
         startContent={
-          imgSrc && <Image src={imgSrc} alt={imgAlt} width={18} radius="none" />
+          imgSrc && (
+            <Image src={imgSrc} alt={imgAlt} height={20} radius="none" />
+          )
         }
         classNames={{
           base: "bg-linear-to-br from-purple-600  to-cyan-500 border-none border-white/50 shadow-indigo-500/30",
           content:
-            "drop-shadow-xs shadow-black text-white text-xs font-semibold",
+            "drop-shadow-xs shadow-black text-white text-md font-semibold",
         }}
       >
         {children}
       </Chip>
     </li>
+  );
+}
+
+function Strong({ children }: Readonly<{ children: ReactNode }>) {
+  return (
+    <strong className="text-transparent bg-clip-text bg-gradient-to-br from-cyan-500  to-purple-700">
+      {children}
+    </strong>
   );
 }
