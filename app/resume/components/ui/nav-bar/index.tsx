@@ -1,6 +1,6 @@
 import { Navbar, NavbarContent, NavbarItem } from "@heroui/navbar";
-import { LanguageSwitcher } from "@/components/language-switcher";
-import { ThemeSwitcher } from "@/components/theme-switcher";
+import { LanguageSwitcher } from "@/app/resume/components/ui/nav-bar/language-switcher";
+import { ThemeSwitcher } from "@/app/resume/components/ui/nav-bar/theme-switcher";
 import { Button } from "@heroui/button";
 import Link from "next/link";
 
