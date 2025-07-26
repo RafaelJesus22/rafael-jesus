@@ -1,5 +1,13 @@
-import { SVGProps } from "react";
+export interface Company {
+  name: string;
+  location: string;
+  linkedin?: string;
+}
 
-export type IconSvgProps = SVGProps<SVGSVGElement> & {
-  size?: number;
-};
+export interface Experience {
+  title: string;
+  company: Company;
+  initialDate: string;
+  finalDate: string;
+  functions: string[];
+}

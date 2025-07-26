@@ -8,8 +8,11 @@ export function ExperiencesSection() {
 
       <Experience
         title="Senior Front-end engineer"
-        company="JazzTech"
-        location="São Paulo, Brazil"
+        company={{
+          name: "JazzTech",
+          location: "São Paulo, Brazil",
+          linkedin: "https://www.linkedin.com/company/jazztech",
+        }}
         initialDate="Feb 2025"
         finalDate="Present"
         functions={[
@@ -21,8 +24,11 @@ export function ExperiencesSection() {
 
       <Experience
         title="Mid Front-end engineer"
-        company="JazzTech"
-        location="São Paulo, Brazil"
+        company={{
+          name: "JazzTech",
+          location: "São Paulo, Brazil",
+          linkedin: "https://www.linkedin.com/company/jazztech",
+        }}
         initialDate="May 2024"
         finalDate="Feb 2025"
         functions={[
@@ -36,8 +42,11 @@ export function ExperiencesSection() {
 
       <Experience
         title="Junior Front-end engineer"
-        company="JazzTech"
-        location="São Paulo, Brazil"
+        company={{
+          name: "JazzTech",
+          location: "São Paulo, Brazil",
+          linkedin: "https://www.linkedin.com/company/jazztech",
+        }}
         initialDate="Nov 2021"
         finalDate="May 2024"
         functions={[
@@ -51,10 +60,13 @@ export function ExperiencesSection() {
 
       <Experience
         title="Junior Fullstack engineer"
-        company="RW3 Tecnologia"
-        location="Barueri, Brazil"
         initialDate="Apr 2021"
         finalDate="Nov 2021"
+        company={{
+          name: "RW3 Tecnologia",
+          location: "Barueri, Brazil",
+          linkedin: "https://www.linkedin.com/company/rw3-tecnologia/",
+        }}
         functions={[
           "Developed and maintained mobile apps (React Native) and backend services (Node.js)",
           "Built the active debt negotiation module and integrated with state APIs",
@@ -64,8 +76,11 @@ export function ExperiencesSection() {
 
       <Experience
         title="Software Engineering Intern"
-        company="Baymetris Tecnologia"
-        location="Barueri, Brazil"
+        company={{
+          name: "Baymetris Tecnologia",
+          location: "Barueri, Brazil",
+          linkedin: "https://www.linkedin.com/company/baymetrics/",
+        }}
         initialDate="Dez 2019"
         finalDate="Dec 2020"
         functions={[

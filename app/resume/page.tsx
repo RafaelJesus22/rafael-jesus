@@ -1,12 +1,8 @@
 import { Avatar } from "@heroui/avatar";
 import { Metadata } from "next";
 import { NavBar } from "./components/ui/nav-bar";
-import { Section, SectionTitle } from "./components/ui/section";
 import { ContactLink } from "./components/ui/contact-link";
 import { Container } from "@/components/screen-container";
-import { Strong } from "./components/ui/strong";
-import { SkillChip } from "./components/ui/skill-chip";
-import { Experience } from "./components/ui/experience";
 import { AboutSection } from "./components/about";
 import { SkillsSection } from "./components/skills";
 import { ExperiencesSection } from "./components/experiences";

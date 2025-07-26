@@ -1,23 +1,26 @@
+import { Experience as ExperienceType } from "@/types";
+import Link from "next/link";
+
 export function Experience({
   company,
   finalDate,
   functions,
   initialDate,
-  location,
   title,
-}: Readonly<{
-  title: string;
-  company: string;
-  location: string;
-  initialDate: string;
-  finalDate: string;
-  functions: string[];
-}>) {
+}: ExperienceType) {
   return (
     <div className="mb-4">
       <h4 className="font-bold text-xl mb-1">{title}</h4>
       <p className="italic">
-        {company} - {location} | {initialDate} - {finalDate}
+        <Link
+          href={company.linkedin!}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline "
+        >
+          {company.name} - {company.location}
+        </Link>{" "}
+        | {initialDate} - {finalDate}
       </p>
       <ul className="list-disc ml-4">
         {functions.map((fun) => (
