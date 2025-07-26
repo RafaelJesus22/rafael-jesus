@@ -2,9 +2,12 @@ import "@/styles/globals.css";
 import { Viewport } from "next";
 import clsx from "clsx";
 
-import { Providers } from "./providers";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import { Providers } from "@/components/providers";
 
 import { fontSans } from "@/config/fonts";
+import { routing } from "@/i18n/routing";
 
 export const viewport: Viewport = {
   themeColor: [
@@ -13,13 +16,20 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
-    <html suppressHydrationWarning lang="en">
+    <html suppressHydrationWarning lang={locale}>
       <head />
       <body
         className={clsx(
@@ -29,11 +39,13 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "white" }}>
-          <div className="relative flex flex-col h-screen">
-            <main className="container mx-auto max-w-7xl flex-grow">
-              {children}
-            </main>
-          </div>
+          <NextIntlClientProvider>
+            <div className="relative flex flex-col h-screen">
+              <main className="container mx-auto max-w-7xl flex-grow">
+                {children}
+              </main>
+            </div>
+          </NextIntlClientProvider>
         </Providers>
       </body>
     </html>

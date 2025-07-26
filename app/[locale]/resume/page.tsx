@@ -7,12 +7,15 @@ import { AboutSection } from "./components/about";
 import { SkillsSection } from "./components/skills";
 import { ExperiencesSection } from "./components/experiences";
 import { EducationSection } from "./components/education";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "Rafael Moura | Resume",
 };
 
 export default function ResumePage() {
+  const t = useTranslations("Resume");
+
   return (
     <Container>
       <NavBar />
@@ -30,7 +33,7 @@ export default function ResumePage() {
             Rafael Moura
           </h1>
           <h3 className="font-extrabold mb-2 sm:text-2xl uppercase">
-            Front-end & Mobile Developer
+            {t("title")}
           </h3>
           <div className="flex gap-4 justify-center sm:justify-start">
             <ContactLink

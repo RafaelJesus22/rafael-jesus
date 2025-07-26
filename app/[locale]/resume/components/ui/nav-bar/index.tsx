@@ -1,6 +1,6 @@
 import { Navbar, NavbarContent, NavbarItem } from "@heroui/navbar";
-import { LanguageSwitcher } from "@/app/resume/components/ui/nav-bar/language-switcher";
-import { ThemeSwitcher } from "@/app/resume/components/ui/nav-bar/theme-switcher";
+import { LanguageSwitcher } from "@/app/[locale]/resume/components/ui/nav-bar/language-switcher";
+import { ThemeSwitcher } from "@/app/[locale]/resume/components/ui/nav-bar/theme-switcher";
 import { Button } from "@heroui/button";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ export function NavBar() {
       }}
     >
       <NavbarContent>
-        <Link href={"./Rafael_Moura_CV_EN.pdf"} download>
+        <Link href={"/Rafael_Moura_CV_EN.pdf"} download>
           <Button
             className="bg-linear-to-tr from-purple-600  to-cyan-500 text-white shadow-lg"
             endContent={<DownloadIcon height={18} />}
