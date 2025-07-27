@@ -1,10 +1,12 @@
 import { Navbar, NavbarContent, NavbarItem } from "@heroui/navbar";
 import { LanguageSwitcher } from "@/app/[locale]/resume/components/ui/nav-bar/language-switcher";
 import { ThemeSwitcher } from "@/app/[locale]/resume/components/ui/nav-bar/theme-switcher";
+import { Messages, useTranslations } from "next-intl";
 import { Button } from "@heroui/button";
 import Link from "next/link";
 
 export function NavBar() {
+  const t = useTranslations<Messages["navBar"]>("navBar");
   return (
     <Navbar
       shouldHideOnScroll
@@ -18,7 +20,7 @@ export function NavBar() {
             className="bg-linear-to-tr from-purple-600  to-cyan-500 text-white shadow-lg"
             endContent={<DownloadIcon height={18} />}
           >
-            Baixar CV
+            {t("downloadButton")}
           </Button>
         </Link>
       </NavbarContent>
@@ -50,11 +52,11 @@ function DownloadIcon({
       stroke="#fff"
       {...props}
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}

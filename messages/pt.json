@@ -1,4 +1,7 @@
 {
+  "navBar": {
+    "downloadButton": "Baixar CV"
+  },
   "Resume": {
     "title": "Desenvolvedor FrontEnd e Mobile",
     "aboutSection": {
@@ -9,8 +12,8 @@
     },
     "experienceSection": {
       "sectionTitle": "Experiência Profissional",
-      "experiences": [
-        {
+      "experiences": {
+        "0": {
           "title": "Desenvolvedor Front-end Senior",
           "company": {
             "name": "JazzzTech",
@@ -25,7 +28,7 @@
             "Participação ativa nas reuniões com o time de produto, oferecendo insights técnicos e análise de viabilidade"
           ]
         },
-        {
+        "1": {
           "title": "Desenvolvedor Front-end Pleno",
           "company": {
             "name": "JazzzTech",
@@ -42,7 +45,7 @@
             "Manutenção de sistema de serviços de plano de saúde (Angular)"
           ]
         },
-        {
+        "2": {
           "title": "Desenvolvedor Mobile Junior",
           "company": {
             "name": "JazzzTech",
@@ -59,7 +62,7 @@
             "Implementação do módulo de gerenciamento de limites (mensal, diário, diurno e noturno)"
           ]
         },
-        {
+        "3": {
           "title": "Desenvolvedor Full Stack Junior",
           "company": {
             "name": "RW3 Tecnologia",
@@ -74,7 +77,7 @@
             "Participação em serviços de integração com o Detran: consulta de veículos, documentos, multas, dívidas e negociações"
           ]
         },
-        {
+        "4": {
           "title": "Estagiário em Engenharia de Software",
           "company": {
             "name": "Baymetrics Tecnologia",
@@ -88,21 +91,22 @@
             "Criação de aplicativos com Power Apps e Power Automate"
           ]
         }
-      ]
+      }
     },
     "educationSection": {
       "sectionTitle": "Formação Acadêmica",
-      "degrees": [
-        {
+      "degrees": {
+        "0": {
           "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
           "initialDate": "Agosto de 2019",
           "finalDate": "Julho de 2022",
           "institution": {
-            "name": "Centro Paula Souza - Fatec Santana de Parnaíba",
-            "linkedin": "https://www.linkedin.com/school/fatec-santana-de-parna%C3%ADba/"
+            "name": "Centro Paula Souza - Fatec",
+            "linkedin": "https://www.linkedin.com/school/fatec-santana-de-parna%C3%ADba/",
+            "location": "Satana de Parnaíba, Brazil"
           }
         }
-      ]
+      }
     }
   }
 }

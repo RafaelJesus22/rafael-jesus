@@ -24,7 +24,7 @@ export function Experience({
       </p>
       <ul className="list-disc ml-4">
         {functions.map((fun) => (
-          <li key={fun.slice(0, 10)}>{fun}</li>
+          <li key={fun.slice(0, 20)}>{fun}</li>
         ))}
       </ul>
     </div>

@@ -1,10 +1,13 @@
+import { useTranslations } from "next-intl";
 import { Section, SectionTitle } from "../ui/section";
 import { Strong } from "../ui/strong";
 
 export function AboutSection() {
+  const t = useTranslations("Resume");
+
   return (
     <Section id="about">
-      <SectionTitle>About me</SectionTitle>
+      <SectionTitle>{t("aboutSection.sectionTitle")}</SectionTitle>
 
       <div className="px-2 flex flex-col gap-2">
         <p>

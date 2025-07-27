@@ -62,8 +62,6 @@ export default function ResumePage() {
             </ContactLink>
           </div>
         </div>
-
-        <div></div>
       </div>
 
       <AboutSection />

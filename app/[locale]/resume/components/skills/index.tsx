@@ -1,10 +1,13 @@
+import { useTranslations } from "next-intl";
 import { Section, SectionTitle } from "../ui/section";
 import { SkillChip } from "../ui/skill-chip";
 
 export function SkillsSection() {
+  const t = useTranslations("Resume");
+
   return (
     <Section id="skills">
-      <SectionTitle>Skills</SectionTitle>
+      <SectionTitle>{t("skillsSection.sectionTitle")}</SectionTitle>
       <ul className="flex gap-2 flex-wrap justify-center">
         <SkillChip imgSrc="/react.svg" imgAlt="React.js">
           React Native
