@@ -1,5 +1,108 @@
 {
   "Resume": {
-    "title": "Desenvolvedor Frontend e Mobile"
+    "title": "Desenvolvedor FrontEnd e Mobile",
+    "aboutSection": {
+      "sectionTitle": "Sobre mim"
+    },
+    "skillsSection": {
+      "sectionTitle": "Tecnologias"
+    },
+    "experienceSection": {
+      "sectionTitle": "Experiência Profissional",
+      "experiences": [
+        {
+          "title": "Desenvolvedor Front-end Senior",
+          "company": {
+            "name": "JazzzTech",
+            "location": "São Paulo, SP",
+            "linkedin": "https://www.linkedin.com/company/jazzztech/"
+          },
+          "initialDate": "Fevereiro de 2022",
+          "finalDate": "o momento",
+          "functions": [
+            "Liderança no desenvolvimento e manutenção dos principais aplicativos mobile (iOS e Android) com React Native e aplicações web com Angular (13+) e Next.js",
+            "Apoio ao tech lead na publicação de apps nas lojas (Apple Store e Google Play), além de entregas via CodePush (App Center) e Expo Updates (EAS)",
+            "Participação ativa nas reuniões com o time de produto, oferecendo insights técnicos e análise de viabilidade"
+          ]
+        },
+        {
+          "title": "Desenvolvedor Front-end Pleno",
+          "company": {
+            "name": "JazzzTech",
+            "location": "São Paulo, SP",
+            "linkedin": "https://www.linkedin.com/company/jazzztech/"
+          },
+          "initialDate": "Maio de 2024",
+          "finalDate": "Fevereiro de 2025",
+          "functions": [
+            "Desenvolvimento e manutenção de aplicações mobile e web",
+            "Desenvolvimento de módulos de cartão de crédito e investimentos",
+            "Estruturação e desenvolvimento de aplicativo de empréstimo consignado (React Native)",
+            "Contribuição em solução web white-label para antecipação de FGTS (Next.js)",
+            "Manutenção de sistema de serviços de plano de saúde (Angular)"
+          ]
+        },
+        {
+          "title": "Desenvolvedor Mobile Junior",
+          "company": {
+            "name": "JazzzTech",
+            "location": "São Paulo, SP",
+            "linkedin": "https://www.linkedin.com/company/jazzztech/"
+          },
+          "initialDate": "Novembro de 2021",
+          "finalDate": "Maio de 2024",
+          "functions": [
+            "Manutenção do app principal da empresa feito em React Native",
+            "Implementação de novas funcionalidades baseadas em protótipos Figma com fidelidade visual",
+            "Integração de SDK de reconhecimento facial e prova de vida",
+            "Participação no rebranding visual do app",
+            "Implementação do módulo de gerenciamento de limites (mensal, diário, diurno e noturno)"
+          ]
+        },
+        {
+          "title": "Desenvolvedor Full Stack Junior",
+          "company": {
+            "name": "RW3 Tecnologia",
+            "location": "Barueri, SP",
+            "linkedin": "https://www.linkedin.com/company/rw3tecnologia/"
+          },
+          "initialDate": "Abril de 2021",
+          "finalDate": "Novembro de 2021",
+          "functions": [
+            "Desenvolvimento e correção de apps React Native e backend em Node.js",
+            "Desenvolvimento do módulo de negociação de dívida ativa e integração com APIs de serviços estaduais",
+            "Participação em serviços de integração com o Detran: consulta de veículos, documentos, multas, dívidas e negociações"
+          ]
+        },
+        {
+          "title": "Estagiário em Engenharia de Software",
+          "company": {
+            "name": "Baymetrics Tecnologia",
+            "location": "Barueri, SP",
+            "linkedin": "https://www.linkedin.com/company/baymetrics/"
+          },
+          "initialDate": "Dezembro de 2019",
+          "finalDate": "Dezembro de 2020",
+          "functions": [
+            "Desenvolvimento de soluções empresariais com Microsoft Power Platform",
+            "Criação de aplicativos com Power Apps e Power Automate"
+          ]
+        }
+      ]
+    },
+    "educationSection": {
+      "sectionTitle": "Formação Acadêmica",
+      "degrees": [
+        {
+          "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+          "initialDate": "Agosto de 2019",
+          "finalDate": "Julho de 2022",
+          "institution": {
+            "name": "Centro Paula Souza - Fatec Santana de Parnaíba",
+            "linkedin": "https://www.linkedin.com/school/fatec-santana-de-parna%C3%ADba/"
+          }
+        }
+      ]
+    }
   }
 }
