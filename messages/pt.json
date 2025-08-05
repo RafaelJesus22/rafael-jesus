@@ -5,7 +5,13 @@
   "Resume": {
     "title": "Desenvolvedor FrontEnd e Mobile",
     "aboutSection": {
-      "sectionTitle": "Sobre mim"
+      "sectionTitle": "Sobre mim",
+      "summary": {
+        "0": "Sou desenvolvedor front-end sênior com mais de 5 anos de experiência na criação e manutenção de aplicações mobile com React Native e web com Next.js, React e Angular, atuando em todo o ecossistema JavaScript/TypeScript — sempre com foco em performance e experiência do usuário.",
+        "1": "Tenho atuado em ambientes ágeis (Scrum e Kanban) como parte de times multidisciplinares, desenvolvendo soluções para os setores bancário, governamental e corporativo.",
+        "2": "Possuo sólida experiência em publicação de apps nas lojas (Google Play e App Store), integração com APIs REST/GraphQL e gerenciamento de estado (Redux, Zustand, React Context). Tenho inglês avançado e facilidade para colaborar com equipes internacionais.",
+        "3": "Com vivência em empresas de produto, desenvolvi fortes habilidades em resolução de problemas, trabalho em equipe e inovação, adquiridas pela atuação em diferentes indústrias e contextos de negócio."
+      }
     },
     "skillsSection": {
       "sectionTitle": "Tecnologias"

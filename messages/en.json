@@ -5,7 +5,13 @@
   "Resume": {
     "title": "Front-end & Mobile Engineer",
     "aboutSection": {
-      "sectionTitle": "About me"
+      "sectionTitle": "About me",
+      "summary": {
+        "0": "I am a Senior Front-End Developer with solid experience in building and maintaining mobile applications using React Native, as well as web applications using Next.js, React, Angular, and the entire JavaScript/TypeScript ecosystem — always with a strong focus on user experience and performance.",
+        "1": "I have been working in agile environments for over 5 years, collaborating in cross-functional teams that follow Scrum and/or Kanban methodologies. I’ve developed applications in the banking, government services, and enterprise solutions sectors.",
+        "2": "With a background in product-driven companies, I bring strong problem-solving skills, teamwork, and a mindset for innovation. I'm also experienced in publishing mobile apps to both the Apple App Store and Google Play Store, integrating with APIs, and implementing modern state management solutions such as Redux, Zustand, Context API, and React Query.",
+        "3": "I have advanced English skills, which allows me to collaborate effectively in international and multicultural teams."
+      }
     },
     "skillsSection": {
       "sectionTitle": "Skills"
