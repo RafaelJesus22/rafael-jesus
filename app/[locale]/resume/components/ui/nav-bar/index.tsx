@@ -14,24 +14,26 @@ export function NavBar() {
         wrapper: "px-0",
       }}
     >
-      <NavbarContent>
-        <Link href={"/Rafael_Moura_CV_EN.pdf"} download>
-          <Button
-            className="bg-linear-to-tr from-purple-600  to-cyan-500 text-white shadow-lg"
-            endContent={<DownloadIcon height={18} />}
-          >
-            {t("downloadButton")}
-          </Button>
-        </Link>
-      </NavbarContent>
+      <NavbarContent className="flex max-w-[720px] m-auto">
+        <NavbarContent>
+          <Link href={"/Rafael_Moura_CV_EN.pdf"} download>
+            <Button
+              className="bg-linear-to-tr from-purple-600  to-cyan-500 text-white shadow-lg"
+              endContent={<DownloadIcon height={18} />}
+            >
+              {t("downloadButton")}
+            </Button>
+          </Link>
+        </NavbarContent>
 
-      <NavbarContent justify="end">
-        <NavbarItem>
-          <ThemeSwitcher />
-        </NavbarItem>
-        <NavbarItem>
-          <LanguageSwitcher />
-        </NavbarItem>
+        <NavbarContent justify="end">
+          <NavbarItem>
+            <ThemeSwitcher />
+          </NavbarItem>
+          <NavbarItem>
+            <LanguageSwitcher />
+          </NavbarItem>
+        </NavbarContent>
       </NavbarContent>
     </Navbar>
   );
