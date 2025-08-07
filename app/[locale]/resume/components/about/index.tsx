@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { Section, SectionTitle } from "../ui/section";
-import { Strong } from "../ui/strong";
+import { Strong as S } from "../ui/strong";
 
 export function AboutSection() {
   const t = useTranslations("Resume");
@@ -24,39 +24,33 @@ function PortugueseAbout() {
   return (
     <div className="flex-col gap-2">
       <p>
-        Sou <Strong>desenvolvedor front-end sênior</Strong> com mais de{" "}
-        <Strong>5 anos de experiência</Strong>
-        {" na "}
-        <Strong>criação</Strong> e <Strong>manutenção</Strong> de{" "}
-        <Strong>aplicações mobile</Strong> com <Strong>React Native</Strong> e
-        web com
-        <Strong>Next.js</Strong>, <Strong>React</Strong> e{" "}
-        <Strong>Angular</Strong>, atuando em todo o ecossistema
-        <Strong>JavaScript/TypeScript</Strong> — sempre com foco em{" "}
-        <Strong>performance</Strong> e <Strong>experiência do usuário</Strong>.
+        Sou <S>desenvolvedor front-end sênior</S> com mais de{" "}
+        <S>5 anos de experiência</S> na <S>criação</S> e <S>manutenção</S> de{" "}
+        <S>aplicações mobile</S> com <S>React Native</S> e web com{" "}
+        <S>Next.js</S>, <S>React</S> e <S>Angular</S>, atuando em todo o
+        ecossistema <S>JavaScript/TypeScript</S> — sempre com foco em{" "}
+        <S>performance</S> e <S>experiência do usuário</S>.
       </p>
       <p>
-        Tenho atuado em <Strong>ambientes ágeis</Strong> (<Strong>Scrum</Strong>{" "}
-        e <Strong>Kanban</Strong>) como parte de{" "}
-        <Strong>times multidisciplinares</Strong>, desenvolvendo soluções para
-        os setores <Strong>bancário</Strong>,<Strong>governamental</Strong> e{" "}
-        <Strong>corporativo</Strong>.
+        Tenho atuado em <S>ambientes ágeis</S> (<S>Scrum</S> e <S>Kanban</S>)
+        como parte de <S>times multidisciplinares</S>, desenvolvendo soluções
+        para os setores <S>bancário</S>, <S>governamental</S> e{" "}
+        <S>corporativo</S>.
       </p>
       <p>
-        Possuo experiência em <Strong>publicação de apps</Strong> nas lojas (
-        <Strong>Google Play</Strong> e<Strong>App Store</Strong>
-        ), <Strong>integração com APIs REST/GraphQL</Strong> e{" "}
-        <Strong>gerenciamento de estado</Strong>(<Strong>Redux</Strong>,{" "}
-        <Strong>Zustand</Strong>, <Strong>React Context</Strong>
-        ). Tenho <Strong>inglês avançado</Strong> e facilidade para colaborar
-        com <Strong>equipes internacionais</Strong>.
+        Possuo experiência em <S>publicação de apps</S> nas lojas (
+        <S>Google Play</S> e <S>App Store</S>
+        ), <S>integração com APIs REST/GraphQL</S> e{" "}
+        <S>gerenciamento de estado</S> (<S>Redux</S>, <S>Zustand</S>,{" "}
+        <S>React Context</S>
+        ). Tenho <S>inglês avançado</S> e facilidade para colaborar com{" "}
+        <S>equipes internacionais</S>.
       </p>
       <p>
-        Com vivência em empresas de produto, desenvolvi fortes habilidades em
-        <Strong>resolução de problemas</Strong>,{" "}
-        <Strong>trabalho em equipe</Strong> e <Strong>inovação</Strong>,
-        adquiridas pela atuação em diferentes indústrias e contextos de
-        negócio."
+        Com vivência em empresas de produto, desenvolvi fortes habilidades em{" "}
+        <S>resolução de problemas</S>, <S>trabalho em equipe</S> e{" "}
+        <S>inovação</S>, adquiridas pela atuação em diferentes indústrias e
+        contextos de negócio.
       </p>
     </div>
   );
@@ -66,40 +60,31 @@ function EnglishAbout() {
   return (
     <div className="flex flex-col gap-3">
       <p>
-        I am a <Strong>Senior Front-End Developer</Strong> with solid experience
-        in building and maintaining <Strong>mobile applications</Strong> using{" "}
-        <Strong>React Native</Strong>, as well as{" "}
-        <Strong>web applications</Strong> using <Strong>Next.js</Strong>,{" "}
-        <Strong>React</Strong>, <Strong>Angular</Strong>, and the entire
-        <Strong>JavaScript/TypeScript</Strong> ecosystem — always with a strong
-        focus on <Strong>user experience</Strong> and{" "}
-        <Strong>user experience</Strong>.
+        I am a <S>Senior Front-End Developer</S> with solid experience in
+        building and maintaining <S>mobile applications</S> using{" "}
+        <S>React Native</S>, as well as <S>web applications</S> using{" "}
+        <S>Next.js</S>, <S>React</S>, <S>Angular</S>, and the entire{" "}
+        <S>JavaScript/TypeScript</S> ecosystem — always with a s focus on{" "}
+        <S>user experience</S> and <S>user experience</S>.
       </p>
       <p>
-        I have been working in <Strong>agile environments</Strong> for over{" "}
-        <Strong>5 years</Strong>, collaborating in{" "}
-        <Strong>cross-functional teams</Strong> that follow{" "}
-        <Strong>Scrum</Strong> and/or <Strong>Kanban</Strong>
-        methodologies. I’ve developed applications in the{" "}
-        <Strong>banking</Strong>, <Strong>government services</Strong>, and{" "}
-        <Strong>enterprise solutions</Strong> sectors.
+        I have been working in <S>agile environments</S> for over <S>5 years</S>
+        , collaborating in <S>cross-functional teams</S> that follow{" "}
+        <S>Scrum</S> and/or <S>Kanban</S> methodologies. I’ve developed
+        applications in the <S>banking</S>, <S>government services</S>, and{" "}
+        <S>enterprise solutions</S> sectors.
       </p>
       <p>
-        With a background in <Strong>product-driven companies</Strong>, I bring
-        strong
-        <Strong>problem-solving skills</Strong>, <Strong>teamwork</Strong>, and
-        a mindset for <Strong>innovation</Strong>. I'm also experienced in
-        publishing mobile apps to both the <Strong>Apple App Store</Strong> and
-        <Strong>Google Play Store</Strong>,{" "}
-        <Strong>integrating with APIs</Strong>, and implementing modern{" "}
-        <Strong>state management</Strong> solutions such as{" "}
-        <Strong>Redux</Strong>, <Strong>Zustand</Strong> and
-        <Strong>Context API</Strong>.
+        With a background in <S>product-driven companies</S>, I bring s{" "}
+        <S>problem-solving skills</S>,. I'm also experienced in publishing
+        mobile apps to both the <S>Apple App Store</S> and{" "}
+        <S>Google Play Store</S>, <S>integrating with APIs</S>, and implementing
+        modern <S>state management</S> solutions such as <S>Redux</S>,{" "}
+        <S>Zustand</S> and <S>Context API</S>.
       </p>
       <p>
-        I have <Strong>advanced English skills</Strong>, which allows me to
-        collaborate effectively in <Strong>international</Strong> and{" "}
-        <Strong>multicultural teams</Strong>.
+        I have <S>advanced English skills</S>, which allows me to collaborate
+        effectively in <S>international</S> and <S>multicultural teams</S>.
       </p>
     </div>
   );
