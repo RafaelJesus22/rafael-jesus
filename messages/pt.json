@@ -19,56 +19,45 @@
     "experienceSection": {
       "sectionTitle": "Experiência Profissional",
       "experiences": {
+        "rolesLabel": "Cargos exercidos",
+        "functionsLabel": "Responsabilidades e Conquistas",
         "0": {
           "title": "Desenvolvedor Front-end Senior",
-          "company": {
-            "name": "JazzzTech",
-            "location": "São Paulo, SP",
-            "linkedin": "https://www.linkedin.com/company/jazzztech/"
-          },
-          "initialDate": "Fevereiro de 2022",
+          "initialDate": "Novembro de 2021",
           "finalDate": "o momento",
+          "roles": {
+            "0": {
+              "title": "Desenvolvedor Front-end Senior",
+              "initialDate": "Fevereiro de 2025",
+              "finalDate": "o momento"
+            },
+            "1": {
+              "title": "Desenvolvedor Front-end Pleno",
+              "initialDate": "Maio de 2024",
+              "finalDate": "Fevereiro 2025"
+            },
+            "2": {
+              "title": "Desenvolvedor Mobile Junior",
+              "initialDate": "Novembro de 2021",
+              "finalDate": "Maio de 2024"
+            }
+          },
+          "company": {
+            "name": "JazzTech",
+            "location": "São Paulo, SP",
+            "linkedin": "https://www.linkedin.com/company/jazztech/"
+          },
           "functions": [
-            "Liderança no desenvolvimento e manutenção dos principais aplicativos mobile (iOS e Android) com React Native e aplicações web com Angular (13+) e Next.js",
-            "Apoio ao tech lead na publicação de apps nas lojas (Apple Store e Google Play), além de entregas via CodePush (App Center) e Expo Updates (EAS)",
-            "Participação ativa nas reuniões com o time de produto, oferecendo insights técnicos e análise de viabilidade"
+            "Desenvolvi e evoluí um aplicativo de banco digital com React Native, utilizando Context API, Redux Toolkit, React Navigation, Formik e Yup.",
+            "Implementei e mantive um app de Empréstimos Consignados com React Native, Redux Toolkit, React Navigation, React Hook Form e Zod.",
+            "Desenvolvi uma aplicação web para empréstimos com garantia de FGTS, usando Next.js, Redux Toolkit, React Hook Form, Zod e Material UI.",
+            "Implementei e mantive um sistema web para gerenciamento de planos de saúde utilizando Angular.",
+            "Gerenciei a publicação e atualização de apps nas lojas (Play Store e App Store), incluindo atualizações OTA com CodePush (App Center) e Expo Updates (EAS).",
+            "Colaborei ativamente em reuniões com os times de produto, design e back-end, contribuindo com decisões técnicas e de arquitetura.",
+            "Realizei integração de SDKs nativas (Android e iOS) para reconhecimento facial e verificação de vida (liveness detection)."
           ]
         },
         "1": {
-          "title": "Desenvolvedor Front-end Pleno",
-          "company": {
-            "name": "JazzzTech",
-            "location": "São Paulo, SP",
-            "linkedin": "https://www.linkedin.com/company/jazzztech/"
-          },
-          "initialDate": "Maio de 2024",
-          "finalDate": "Fevereiro de 2025",
-          "functions": [
-            "Desenvolvimento e manutenção de aplicações mobile e web",
-            "Desenvolvimento de módulos de cartão de crédito e investimentos",
-            "Estruturação e desenvolvimento de aplicativo de empréstimo consignado (React Native)",
-            "Contribuição em solução web white-label para antecipação de FGTS (Next.js)",
-            "Manutenção de sistema de serviços de plano de saúde (Angular)"
-          ]
-        },
-        "2": {
-          "title": "Desenvolvedor Mobile Junior",
-          "company": {
-            "name": "JazzzTech",
-            "location": "São Paulo, SP",
-            "linkedin": "https://www.linkedin.com/company/jazzztech/"
-          },
-          "initialDate": "Novembro de 2021",
-          "finalDate": "Maio de 2024",
-          "functions": [
-            "Manutenção do app principal da empresa feito em React Native",
-            "Implementação de novas funcionalidades baseadas em protótipos Figma com fidelidade visual",
-            "Integração de SDK de reconhecimento facial e prova de vida",
-            "Participação no rebranding visual do app",
-            "Implementação do módulo de gerenciamento de limites (mensal, diário, diurno e noturno)"
-          ]
-        },
-        "3": {
           "title": "Desenvolvedor Full Stack Junior",
           "company": {
             "name": "RW3 Tecnologia",
@@ -78,12 +67,13 @@
           "initialDate": "Abril de 2021",
           "finalDate": "Novembro de 2021",
           "functions": [
-            "Desenvolvimento e correção de apps React Native e backend em Node.js",
-            "Desenvolvimento do módulo de negociação de dívida ativa e integração com APIs de serviços estaduais",
-            "Participação em serviços de integração com o Detran: consulta de veículos, documentos, multas, dívidas e negociações"
+            "Desenvolvi e mantive aplicações governamentais com React Native e TypeScript, utilizando MobX para gerenciamento de estado.",
+            "Implementei o back-end com o framework Ts.ED, realizando integrações com APIs de órgãos públicos como DETRAN, PGE e SEDUC.",
+            "Fui responsável pelo módulo de negociação de dívidas ativas no app mobile, incluindo toda a integração com a API da PGE no back-end.",
+            "Participei de reuniões com times de produto e design, contribuindo com decisões técnicas e sugestões de arquitetura."
           ]
         },
-        "4": {
+        "2": {
           "title": "Estagiário em Engenharia de Software",
           "company": {
             "name": "Baymetrics Tecnologia",
@@ -93,8 +83,7 @@
           "initialDate": "Dezembro de 2019",
           "finalDate": "Dezembro de 2020",
           "functions": [
-            "Desenvolvimento de soluções empresariais com Microsoft Power Platform",
-            "Criação de aplicativos com Power Apps e Power Automate"
+            "Desenvolvi aplicações empresáriais usando Microsoft PowerPlatform (PowerApps e PowerAutomate) para clientes como TB Globo, Natura e C&A"
           ]
         }
       }

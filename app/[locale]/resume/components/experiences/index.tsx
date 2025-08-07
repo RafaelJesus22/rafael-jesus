@@ -8,7 +8,7 @@ export function ExperiencesSection() {
   const experiences = useTranslations("Resume.experienceSection.experiences");
 
   function getExperiences(): ExperienceType[] {
-    const keys = ["0", "1", "2", "3", "4"];
+    const keys = ["0", "1", "2"];
     return keys.map(experiences.raw);
   }
 
@@ -27,6 +27,7 @@ export function ExperiencesSection() {
           initialDate={e.initialDate}
           finalDate={e.finalDate}
           functions={e.functions}
+          roles={e.roles}
           company={{
             name: e.company.name,
             location: e.company.location,

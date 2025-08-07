@@ -19,56 +19,45 @@
     "experienceSection": {
       "sectionTitle": "Experience",
       "experiences": {
+        "rolesLabel": "Roles",
+        "functionsLabel": "Responsibilities and Achievements",
         "0": {
           "title": "Senior Frontend Engineer",
-          "company": {
-            "name": "JazzzTech",
-            "location": "São Paulo, SP",
-            "linkedin": "https://www.linkedin.com/company/jazzztech/"
-          },
-          "initialDate": "Feb de 2022",
+          "initialDate": "Feb de 2025",
           "finalDate": "Present",
+          "roles": {
+            "0": {
+              "title": "Senior Frontend Engineer",
+              "initialDate": "Feb de 2025",
+              "finalDate": "Present"
+            },
+            "1": {
+              "title": "Mid Frontend Engineer",
+              "initialDate": "May 2024",
+              "finalDate": "Feb 2025"
+            },
+            "2": {
+              "title": "Junior Mobile Engineer",
+              "initialDate": "Nov 2021",
+              "finalDate": "May 2024"
+            }
+          },
+          "company": {
+            "name": "JazzTech",
+            "location": "São Paulo, SP",
+            "linkedin": "https://www.linkedin.com/company/jazztech/"
+          },
           "functions": [
-            "Lead development and maintenance of core React Native mobile apps (iOS & Android) and web platforms using Angular (13+) and Next.js",
-            "Support the tech lead in app store deployments (Apple App Store and Google Play) and feature delivery via CodePush (App Center) and Expo Updates (EAS)",
-            "Actively participate in product meetings, offering technical insights and feasibility analysis"
+            "Developed and enhanced a digital banking app using React Native with Context API, Redux Toolkit, React Navigation, Formik, and Yup.",
+            "Implemented and maintained a payroll loan app with React Native, Redux Toolkit, React Navigation, React Hook Form, and Zod.",
+            "Built a web application for FGTS-backed loans using Next.js, Redux Toolkit, React Hook Form, Zod, and Material UI.",
+            "Developed and maintained a web system for health plan management using Angular.",
+            "Managed the publishing and updating of apps on Play Store and App Store, including OTA updates with CodePush (App Center) and Expo Updates (EAS).",
+            "Actively participated in meetings with product, design, and back-end teams, contributing to technical and architectural decisions.",
+            "Integrated native SDKs (Android and iOS) for facial recognition and liveness detection."
           ]
         },
         "1": {
-          "title": "Mid Level Frontend Enginerr",
-          "company": {
-            "name": "JazzzTech",
-            "location": "São Paulo, SP",
-            "linkedin": "https://www.linkedin.com/company/jazzztech/"
-          },
-          "initialDate": "May 2024",
-          "finalDate": "Feb 2025",
-          "functions": [
-            "Maintained and developed mobile/web applications with increasing ownership",
-            "Built major features for the new credit card and investments modules",
-            "Designed and developed key parts of a consignment loan app (React Native)",
-            "Collaborated on a white-label web solution for FGTS anticipation (Next.js)",
-            "Contributed to maintaining a health insurance web platform (Angular)"
-          ]
-        },
-        "2": {
-          "title": "Junior Mobile Engineer",
-          "company": {
-            "name": "JazzzTech",
-            "location": "São Paulo, SP",
-            "linkedin": "https://www.linkedin.com/company/jazzztech/"
-          },
-          "initialDate": "Nov 2021",
-          "finalDate": "May 2024",
-          "functions": [
-            "Maintained the company's flagship React Native application",
-            "Delivered pixel-perfect features based on Figma prototypes",
-            "Integrated facial recognition and liveness detection SDK to prevent fraud",
-            "Contributed to a complete visual rebranding of the mobile app",
-            "Built a limit management module (daily, monthly, daytime, and nighttime limits)"
-          ]
-        },
-        "3": {
           "title": " Junior Full Stack Engineer",
           "company": {
             "name": "RW3 Tecnologia",
@@ -78,12 +67,13 @@
           "initialDate": "Apr 2021",
           "finalDate": "Nov 2021",
           "functions": [
-            "Developed and maintained mobile apps (React Native) and backend services (Node.js)",
-            "Built the active debt negotiation module and integrated with state APIs",
-            "Participated in developing services for traffic, vehicle, document, fine, and debt consultations"
+            "Developed and maintained government applications using React Native with TypeScript, adopting MobX for state management.",
+            "Implemented the back-end using Ts.ED framework and integrated APIs from public institutions such as DETRAN, PGE, and SEDUC.",
+            "Led the development of the active debt negotiation module in the mobile app and handled full integration with the PGE API on the back-end.",
+            "Participated in meetings with product and design teams, providing input on technical and architectural decisions."
           ]
         },
-        "4": {
+        "2": {
           "title": "Software Engineer intern",
           "company": {
             "name": "Baymetrics Tecnologia",
@@ -93,8 +83,7 @@
           "initialDate": "Dec 2019",
           "finalDate": "Dec 2020",
           "functions": [
-            "Built business apps using the Microsoft Power Platform",
-            "Developed solutions with Power Apps and Power Automate"
+            "Developed business applications using Microsoft Power Platform (Power Apps and Power Automate) for clients such as TV Globo, Natura, and C&A."
           ]
         }
       }

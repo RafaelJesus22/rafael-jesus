@@ -25,6 +25,13 @@ export interface Experience {
   initialDate: string;
   finalDate: string;
   functions: string[];
+  roles?: Role[];
+}
+
+export interface Role {
+  title: string;
+  initialDate: string;
+  finalDate: string;
 }
 
 export interface Company {
