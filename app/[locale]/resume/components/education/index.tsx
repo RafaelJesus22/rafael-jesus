@@ -18,7 +18,7 @@ export function EducationSection() {
       {getDegrees().map((degree) => (
         <div key={degree.title}>
           <h4 className="font-bold text-xl mb-1">{degree.title}</h4>
-          <p className="italic">
+          <p>
             <Link
               href={degree.institution.linkedin!}
               target="_blank"
@@ -26,8 +26,10 @@ export function EducationSection() {
               className="hover:underline "
             >
               {degree.institution.name}, {degree.institution.location}
-            </Link>{" "}
-            | {degree.initialDate} -{degree.finalDate}
+            </Link>
+          </p>
+          <p>
+            {degree.initialDate} - {degree.finalDate}
           </p>
         </div>
       ))}

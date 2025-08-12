@@ -14,7 +14,7 @@ export function Section({
 
 export function SectionTitle({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <Card radius="sm" isBlurred={false} className="mb-2">
+    <Card radius="sm" isBlurred={false} className="mb-2 font-mono">
       <CardBody>
         <h1 className="font-bold uppercase">{children}</h1>
       </CardBody>

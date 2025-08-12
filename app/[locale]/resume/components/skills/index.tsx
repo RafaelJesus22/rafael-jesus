@@ -30,6 +30,12 @@ export function SkillsSection() {
         <SkillChip imgSrc="/redux.svg" imgAlt="Redux">
           Redux
         </SkillChip>
+        <SkillChip>Play Store</SkillChip>
+        <SkillChip>App Store</SkillChip>
+        <SkillChip>Git</SkillChip>
+        <SkillChip>Github</SkillChip>
+        <SkillChip>Expo</SkillChip>
+        <SkillChip>API Rest/GraphQL</SkillChip>
       </ul>
     </Section>
   );

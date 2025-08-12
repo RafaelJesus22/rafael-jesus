@@ -30,7 +30,7 @@ export default function ResumePage() {
             color="secondary"
           />
           <div className="flex flex-col items-center sm:items-start">
-            <h1 className="text-3xl sm:text-4xl font-black uppercase">
+            <h1 className="text-3xl sm:text-4xl font-bold uppercase font-mono">
               Rafael Moura
             </h1>
             <h3 className="font-extrabold mb-2 sm:text-2xl uppercase">

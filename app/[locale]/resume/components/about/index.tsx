@@ -22,7 +22,7 @@ export function AboutSection() {
 
 function PortugueseAbout() {
   return (
-    <div className="flex-col gap-2">
+    <div className="flex flex-col gap-2">
       <p>
         Sou <S>desenvolvedor front-end sênior</S> com mais de{" "}
         <S>5 anos de experiência</S> na <S>criação</S> e <S>manutenção</S> de{" "}
@@ -58,7 +58,7 @@ function PortugueseAbout() {
 
 function EnglishAbout() {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-2">
       <p>
         I am a <S>Senior Front-End Developer</S> with solid experience in
         building and maintaining <S>mobile applications</S> using{" "}

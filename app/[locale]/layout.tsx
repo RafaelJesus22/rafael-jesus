@@ -6,7 +6,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { Providers } from "@/components/providers";
 
-import { fontSans } from "@/config/fonts";
+import { fontSans, fontMono } from "@/config/fonts";
 import { routing } from "@/i18n/routing";
 
 export const viewport: Viewport = {
@@ -35,6 +35,7 @@ export default async function RootLayout({
         className={clsx(
           "min-h-screen text-foreground bg-background font-sans antialiased",
           fontSans.variable,
+          fontMono.variable,
           "[&_*::selection]:bg-cyan-600 [&_*::selection]:text-white"
         )}
       >
