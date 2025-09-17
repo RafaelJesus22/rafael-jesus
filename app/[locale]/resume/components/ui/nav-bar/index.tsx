@@ -1,12 +1,15 @@
-import { Navbar, NavbarContent, NavbarItem } from "@heroui/navbar";
+import { Messages, useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
+
 import { LanguageSwitcher } from "@/app/[locale]/resume/components/ui/nav-bar/language-switcher";
 import { ThemeSwitcher } from "@/app/[locale]/resume/components/ui/nav-bar/theme-switcher";
-import { Messages, useTranslations } from "next-intl";
+import { Navbar, NavbarContent, NavbarItem } from "@heroui/navbar";
 import { Button } from "@heroui/button";
-import Link from "next/link";
 
 export function NavBar() {
   const t = useTranslations<Messages["navBar"]>("navBar");
+  const locale = useLocale();
+
   return (
     <Navbar
       shouldHideOnScroll
@@ -16,7 +19,7 @@ export function NavBar() {
     >
       <NavbarContent className="flex max-w-[720px] m-auto">
         <NavbarContent>
-          <Link href={"/Rafael_Moura_CV_EN.pdf"} download>
+          <Link href={`/files/RafaelMoura-frontend-${locale}.pdf`} download>
             <Button
               className="bg-linear-to-tr from-purple-600  to-cyan-500 text-white shadow-lg"
               endContent={<DownloadIcon height={18} />}

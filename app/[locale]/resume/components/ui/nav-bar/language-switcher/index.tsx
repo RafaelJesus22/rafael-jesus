@@ -3,7 +3,6 @@
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { Select, SelectItem } from "@heroui/select";
 import { useLocale } from "next-intl";
-import { useState } from "react";
 
 export const languages = [
   { key: "pt", label: "🇧🇷 PT" },
